@@ -1,5 +1,66 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 1rem;
+}
+
+div {
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+a:hover {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.profile {
+  background: linear-gradient(to bottom right, #ffff99 30%, goldenrod 100%);
+  opacity: 0.8;
+  border-radius: 0.95rem;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: white;
+  /* padding: 2rem; */
+  border: 2px solid goldenrod;
+  border-radius: 0.75rem;
+  display: inline-block;
+}
+
 #photo {
   width: 200px;
   height: 200px;
+  border: 2px solid goldenrod;
   border-radius: 50%;
+}
+
+#accent {
+  color: goldenrod;
 }
