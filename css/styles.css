@@ -24,7 +24,7 @@ a {
 }
 
 button {
-  padding: 6px;
+  padding: 10px;
   border-radius: 0.5rem;
   background: linear-gradient(to bottom right, #ffff99 30%, goldenrod 100%);
   opacity: 0.8;
