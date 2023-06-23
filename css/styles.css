@@ -87,6 +87,11 @@ ul {
   width: 1fr;
 }
 
+.events:hover {
+  font-size: larger;
+  cursor: pointer;
+}
+
 #photo {
   width: 280px;
   height: 280px;
