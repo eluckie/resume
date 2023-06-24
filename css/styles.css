@@ -56,8 +56,9 @@ ul {
 }
 
 .icon:hover {
-  border: 2px solid goldenrod;
   border-radius: 0.95rem;
+  outline: 2px solid goldenrod;
+  outline-offset: -1px; 
 }
 
 .profile {
@@ -87,9 +88,26 @@ ul {
   width: 1fr;
 }
 
+.events {
+  transition: all 0.2s ease-in-out;
+}
+
 .events:hover {
-  font-size: larger;
+  transform: scale(1.2);
   cursor: pointer;
+}
+
+#minimize {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: goldenrod;
+  float: right;
+  padding-right: 10px;
+}
+
+#minimize:hover {
+  transform: scale(1.5);
+  font-weight: bold;
 }
 
 #photo {
@@ -97,6 +115,11 @@ ul {
   height: 280px;
   border: 2px solid goldenrod;
   border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+#photo:hover {
+  transform: scale(1.1);
 }
 
 #accent {
