@@ -22,18 +22,28 @@ function viewNso() {
   document.getElementById("nso").removeAttribute("class");
   document.getElementById("remodel").setAttribute("class", "hidden");
   document.getElementById("fla").setAttribute("class", "hidden");
+  document.getElementById("minimize").removeAttribute("class");
 }
 
 function viewRemodel() {
   document.getElementById("remodel").removeAttribute("class");
   document.getElementById("nso").setAttribute("class", "hidden");
   document.getElementById("fla").setAttribute("class", "hidden");
+  document.getElementById("minimize").removeAttribute("class");
 }
 
 function viewFla() {
   document.getElementById("fla").removeAttribute("class");
   document.getElementById("remodel").setAttribute("class", "hidden");
   document.getElementById("nso").setAttribute("class", "hidden");
+  document.getElementById("minimize").removeAttribute("class");
+}
+
+function closeAll() {
+  document.getElementById("nso").setAttribute("class", "hidden");
+  document.getElementById("fla").setAttribute("class", "hidden");
+  document.getElementById("remodel").setAttribute("class", "hidden");
+  document.getElementById("minimize").setAttribute("class", "hidden");
 }
 
 window.addEventListener("load", () => {
@@ -44,4 +54,5 @@ window.addEventListener("load", () => {
   document.getElementById("nso-title").addEventListener("click", viewNso);
   document.getElementById("remodel-title").addEventListener("click", viewRemodel);
   document.getElementById("fla-title").addEventListener("click", viewFla);
+  document.getElementById("minimize").addEventListener("click", closeAll);
 });
