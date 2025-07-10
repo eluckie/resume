@@ -77,7 +77,7 @@ ul {
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .skill {
@@ -111,8 +111,8 @@ ul {
 }
 
 #photo {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border: 2px solid goldenrod;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
