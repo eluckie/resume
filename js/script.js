@@ -49,6 +49,7 @@ function closeAll() {
 window.addEventListener("load", () => {
   document.getElementById("experience-btn").addEventListener("click", viewExp);
   document.getElementById("hide-exp-btn").addEventListener("click", hideExp);
+  document.getElementById("hide-exp-btn2").addEventListener("click", hideExp);
   document.getElementById("achievements-btn").addEventListener("click", viewAch);
   document.getElementById("hide-ach-btn").addEventListener("click", hideAch);
   document.getElementById("nso-title").addEventListener("click", viewNso);
