@@ -39,11 +39,39 @@ function viewFla() {
   document.getElementById("minimize").removeAttribute("class");
 }
 
-function closeAll() {
+function closeEvents() {
   document.getElementById("nso").setAttribute("class", "hidden");
   document.getElementById("fla").setAttribute("class", "hidden");
   document.getElementById("remodel").setAttribute("class", "hidden");
   document.getElementById("minimize").setAttribute("class", "hidden");
+}
+
+function viewMerch() {
+  document.getElementById("merch").removeAttribute("class");
+  document.getElementById("ops").setAttribute("class", "hidden");
+  document.getElementById("brand").setAttribute("class", "hidden");
+  document.getElementById("exit").removeAttribute("class");
+}
+
+function viewOps() {
+  document.getElementById("ops").removeAttribute("class");
+  document.getElementById("merch").setAttribute("class", "hidden");
+  document.getElementById("brand").setAttribute("class", "hidden");
+  document.getElementById("exit").removeAttribute("class");
+}
+
+function viewBrand() {
+  document.getElementById("brand").removeAttribute("class");
+  document.getElementById("merch").setAttribute("class", "hidden");
+  document.getElementById("ops").setAttribute("class", "hidden");
+  document.getElementById("exit").removeAttribute("class");
+}
+
+function closeServices() {
+  document.getElementById("merch").setAttribute("class", "hidden");
+  document.getElementById("ops").setAttribute("class", "hidden");
+  document.getElementById("brand").setAttribute("class", "hidden");
+  document.getElementById("exit").setAttribute("class", "hidden");
 }
 
 window.addEventListener("load", () => {
@@ -55,5 +83,9 @@ window.addEventListener("load", () => {
   document.getElementById("nso-title").addEventListener("click", viewNso);
   document.getElementById("remodel-title").addEventListener("click", viewRemodel);
   document.getElementById("fla-title").addEventListener("click", viewFla);
-  document.getElementById("minimize").addEventListener("click", closeAll);
+  document.getElementById("minimize").addEventListener("click", closeEvents);
+  document.getElementById("merch-title").addEventListener("click", viewMerch);
+  document.getElementById("ops-title").addEventListener("click", viewOps);
+  document.getElementById("brand-title").addEventListener("click", viewBrand);
+  document.getElementById("exit").addEventListener("click", closeServices);
 });
