@@ -114,6 +114,19 @@ ul {
   padding-right: 10px;
 }
 
+#exit:hover {
+  transform: scale(1.5);
+  font-weight: bold;
+}
+
+#exit {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: goldenrod;
+  float: right;
+  padding-right: 10px;
+}
+
 #minimize:hover {
   transform: scale(1.5);
   font-weight: bold;
